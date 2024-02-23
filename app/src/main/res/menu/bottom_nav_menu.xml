@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard"
+        app:cnb_iconColor="@color/teal_700DN"/>
+    <item
+        android:id="@+id/bottom_nav_sell"
+        android:icon="@drawable/ic_sell"
+        android:title="Sell"
+        app:cnb_iconColor="@color/purple_700" />
+    <item
+        android:id="@+id/bottom_nav_buy"
+        android:icon="@drawable/ic_buy_shopping_cart_24"
+        android:title="Buy"
+        app:cnb_iconColor="#3A883D"/>
+    <item
+        android:id="@+id/bottom_nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"
+        app:cnb_iconColor="#2196F3"/>
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_700DN">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="blackDN">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteDN">#FFFFFFFF</color>
+    <color name="blueSky">#2196F3</color>
+    <color name="darkBlue">#082c6c</color>
+    <color name="lightGrey">#bebebe</color>
+    <color name="card2DN">#7adccf</color>
+    <color name="lightWhiteDN">#EDEDED</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Dashboard Colors -->
+        <!-- Body and Background Colors -->
+        <color name="home_background">#f2f5f8</color>
+        <color name="banner_background">#F1E9CE</color>
+
+    <!-- Card Colors -->
+        <color name="card1">#d4cbe5</color>
+        <color name="card2">#7adccf</color>
+        <color name="card3">#f7c59f</color>
+        <color name="card4">#b8d7f5</color>
+    <color name="lightWhite">#EDEDED</color>
+    <color name="background">#EDEDED</color>
+    <color name="background_theme">#EDEDED</color>
+
+    <dimen name="_10sdp">10sp</dimen>
+    <dimen name="_50sdp">50sp</dimen>
+    <dimen name="_8sdp">8sp</dimen>
+    <dimen name="_12ssp">12sp</dimen>
+
+</resources>

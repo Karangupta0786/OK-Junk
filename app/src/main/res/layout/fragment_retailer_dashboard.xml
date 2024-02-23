@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueSky"
+    tools:context=".FragmentsRetailerDashbord.RetailerDashboardFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@color/whiteDN"
+        android:orientation="vertical">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/card2DN">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true">
+
+
+                <ImageView
+                    android:id="@+id/callme"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#00000000"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_phone_24"
+                    app:tint="@color/purple_200" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/brawler"
+                android:text="Get a Way"
+                android:textColor="@color/blackDN"
+                android:textSize="@dimen/_18font_mdp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_theme"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:text="DARK"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="180dp"
+                android:layout_below="@+id/app_name"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/black_border"
+                android:elevation="12dp">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/slider"
+                    android:layout_width="328dp"
+                    android:layout_height="178dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/black_border"
+                    android:elevation="15dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="0"
+                    app:iss_error_image="@drawable/error"
+                    app:iss_period="3000"
+                    app:iss_placeholder="@drawable/okt" />
+
+
+
+      <!--          <ViewFlipper
+                    android:id="@+id/flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:autoStart="true"
+                    android:elevation="10dp"
+                    android:flipInterval="3000"
+                    android:background="@drawable/black_border"
+                    android:inAnimation="@android:anim/fade_in"
+                    android:outAnimation="@android:anim/fade_out"
+                    tools:ignore="UselessParent">
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/clean2"/>
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/clean1"/>
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/clean3"/>
+
+                </ViewFlipper>
+-->
+
+            <!--    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="Search..." />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/search_icon" />-->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/card1">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team"
+                android:textColor="#E843655B"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/card2">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/jaguarrou" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trash"
+                android:textColor="#E843655B"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/card3">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/newspaper_bundle" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="junk"
+                android:textColor="#E843655B"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/card4">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/scrap" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="scrap"
+                android:textColor="#E843655B"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/internet"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:elevation="12dp"
+            android:layout_marginEnd="0dp"
+            android:visibility="gone"
+            android:background="@color/blueSky">
+
+            <ImageView
+                android:id="@+id/wifi_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/wifi_off"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/conn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/wifi_icon"
+                android:text="Internet Not Available"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:text="Retry ?"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/internet_connected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner_top"
+            android:backgroundTint="@color/card2DN"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--        <RelativeLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="?actionBarSize">-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/back_pressed"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:src="@drawable/backspace_24"-->
+            <!--                android:padding="15dp"-->
+            <!--                android:layout_centerVertical="true"/>-->
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:src="@drawable/search_icon"-->
+            <!--                android:padding="15dp"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_centerVertical="true"/>-->
+
+
+            <!--        </RelativeLayout>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:includeFontPadding="false"
+                android:text="Categories"
+                android:textAllCaps="true"
+                android:textColor="@color/blackDN"
+                android:textSize="@dimen/_18font_mdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/we_will_buy_all_type_of_junk_listed_below"
+                android:textColor="@color/blackDN"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/newspaperPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/newspaper_bundle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/baloo"
+                        android:paddingHorizontal="10dp"
+                        android:text="Old Books"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/brawler"
+                        android:includeFontPadding="false"
+                        android:text="Newspaper, Books \nCarton Boxes ,..etc"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/boo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/baloo"
+                        android:padding="5dp"
+                        android:text="Rs.10/kg"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="250dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-70dp"
+                    android:padding="15dp"
+                    android:src="@drawable/bookl" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/electronicPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/apple">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo"
+                        android:paddingHorizontal="10dp"
+                        android:text="Electronics"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="#90EDEDED"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="#90EDEDED"
+                        android:fontFamily="@font/brawler"
+                        android:includeFontPadding="false"
+                        android:text="T.V, Refregertors, Cooler \nAireConditioners, Owens...etc"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/electronicsP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#B4EDEDED"
+                        android:fontFamily="@font/baloo"
+                        android:padding="5dp"
+                        android:text="Prices depends on goods"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="250dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-70dp"
+                    android:elevation="3dp"
+                    android:padding="25dp"
+                    android:src="@drawable/fridge"/>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/plasticPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#00000000"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/pipe">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/baloo"
+                        android:padding="10dp"
+                        android:text="Plastic"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="40dp"
+                        android:fontFamily="@font/brawler"
+                        android:includeFontPadding="false"
+                        android:text="Plastic chair-Table , \nToys , pipes...etc"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/plastics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/baloo"
+                        android:padding="5dp"
+                        android:text="Rs. 20/kg"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="180dp"
+                        android:src="@drawable/chair" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:id="@+id/steelPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/pot_pan">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo"
+                        android:paddingHorizontal="10dp"
+                        android:text="Steel"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="60dp"
+                        android:fontFamily="@font/brawler"
+                        android:includeFontPadding="false"
+                        android:text="Steel - Pots, Frames...etc"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/steels"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/baloo"
+                        android:padding="5dp"
+                        android:text="Rs.35/kg"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="250dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-70dp"
+                    android:src="@drawable/pot_mug" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ironPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#00000000"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/iron_rods">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/baloo"
+                        android:padding="10dp"
+                        android:text="Junk Iron"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/irons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/baloo"
+                        android:padding="5dp"
+                        android:text="Rs. 22/kg"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/muli_black"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Iron chair-Table , Almiras , Doors \nand Windows , pipes...etc"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/alloys">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="Alloys"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginBottom="50dp"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/brawler"
+                        android:includeFontPadding="false"
+                        android:text="Copper, Brass, Aluminium...etc"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/alloys"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/baloo"
+                        android:padding="5dp"
+                        android:text="Depends on Type of Alloy"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-35dp"
+                    android:padding="15dp"
+                    android:src="@drawable/alloy" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/motorbike">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="Old Bike"
+                        android:textColor="@color/blackDN"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginBottom="50dp"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/brawler"
+                        android:includeFontPadding="false"
+                        android:text="MotorBike, Scooters...etc"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/baloo"
+                        android:padding="5dp"
+                        android:text="Rs. 1500-2100/Bike"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-35dp"
+                    android:padding="15dp"
+                    android:src="@drawable/scoooter" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/old_car">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="Old Car"
+                        android:textColor="@color/blackDN"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/round_corners"
+                        android:backgroundTint="#27000000"
+                        android:fontFamily="@font/baloo"
+                        android:includeFontPadding="false"
+                        android:padding="5dp"
+                        android:text="Depends On Vehicle"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <!-- <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-70dp"
+                android:padding="15dp"
+                android:src="@drawable/old_car" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/car">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        app:fabSize="normal"
+        android:elevation="5dp"
+        android:layout_marginTop="560dp"
+        android:src="@drawable/ic_sell"
+        android:tint="@color/black"
+        android:transitionName="transition_sell"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
